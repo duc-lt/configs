@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/retina/.config/nvim'
+let g:netrw_dirhist_2='/home/retina/.local/share/nvim/plugged/iceberg.vim/colors'
+let g:netrw_dirhist_1='/home/retina/.local/share/nvim/plugged/iceberg.vim'

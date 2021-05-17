@@ -79,28 +79,31 @@ function! smartinput#define_default_rules()  "{{{2
     let right = '<C-g>U<Right>'
   endif
   call urules.add('()', [
-  \   {'at': '\%#', 'char': '(', 'input': '()'.left},
-  \   {'at': '\%#\_s*)', 'char': ')', 'input': '<C-r>=smartinput#_leave_block('')'')<Enter>'.right},
+  \   {'at': '\%#', 'char': '(', 'input': '()' . left},
+  \   {'at': '\%#\_s*)', 'char': ')', 'input': '<C-r>=smartinput#_leave_block('')'')<Enter>' . right},
   \   {'at': '(\%#)', 'char': '<BS>', 'input': '<BS><Del>'},
   \   {'at': '()\%#', 'char': '<BS>', 'input': '<BS><BS>'},
   \   {'at': '\\\%#', 'char': '(', 'input': '('},
   \   {'at': '(\%#)', 'char': '<Enter>', 'input': '<Enter><Enter><Up><Esc>"_S'},
+  \   {'at': '(\n\_s*\%#\n\_s*)', 'char': '<BS>', 'input': '<Esc>ca(()' . left},
   \ ])
   call urules.add('[]', [
-  \   {'at': '\%#', 'char': '[', 'input': '[]'.left},
-  \   {'at': '\%#\_s*\]', 'char': ']', 'input': '<C-r>=smartinput#_leave_block('']'')<Enter>'.right},
+  \   {'at': '\%#', 'char': '[', 'input': '[]' . left},
+  \   {'at': '\%#\_s*\]', 'char': ']', 'input': '<C-r>=smartinput#_leave_block('']'')<Enter>' . right},
   \   {'at': '\[\%#\]', 'char': '<BS>', 'input': '<BS><Del>'},
   \   {'at': '\[\]\%#', 'char': '<BS>', 'input': '<BS><BS>'},
   \   {'at': '\\\%#', 'char': '[', 'input': '['},
   \   {'at': '\[\%#\]', 'char': '<Enter>', 'input': '<Enter><Enter><Up><Esc>"_S'},
+  \   {'at': '\[\n\_s*\%#\n\_s*\]', 'char': '<BS>', 'input': '<Esc>ca\[\[\]' . left},
   \ ])
   call urules.add('{}', [
-  \   {'at': '\%#', 'char': '{', 'input': '{}'.left},
-  \   {'at': '\%#\_s*}', 'char': '}', 'input': '<C-r>=smartinput#_leave_block(''}'')<Enter>'.right},
+  \   {'at': '\%#', 'char': '{', 'input': '{}' . left},
+  \   {'at': '\%#\_s*}', 'char': '}', 'input': '<C-r>=smartinput#_leave_block(''}'')<Enter>' . right},
   \   {'at': '{\%#}', 'char': '<BS>', 'input': '<BS><Del>'},
   \   {'at': '{}\%#', 'char': '<BS>', 'input': '<BS><BS>'},
   \   {'at': '\\\%#', 'char': '{', 'input': '{'},
   \   {'at': '{\%#}', 'char': '<Enter>', 'input': '<Enter><Enter><Up><Esc>"_S'},
+  \   {'at': '{\n\_s*\%#\n\_s*}', 'char': '<BS>', 'input': '<Esc>ca{{}' . left},
   \ ])
   call urules.add('''''', [
   \   {'at': '\%#', 'char': '''', 'input': ''''''.left},
