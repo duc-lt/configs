@@ -1,4 +1,6 @@
 {
   "suggest.enablePreselect": true,
-  "suggest.enablePreview": true
+  "suggest.enablePreview": true,
+  "coc.preferences.formatOnSaveFiletypes": ["typescript", "typescriptreact", "javascript", "javascriptreact", "html", "css", "python"],
+  "prettier.singleQuote": true
 }
