@@ -7,22 +7,33 @@ source ~/.config/nvim/coc-configs/coc-configs.vim
 
 set number
 set relativenumber
+set mouse=a
+set nowrap
+set ruler
+
 " Map jk to <Esc>
 inoremap jk <Esc>
-vnoremap jk <Esc>
 tnoremap jk <Esc>
 
+" Turn off last search highlighting
+nnoremap <Leader>h :noh<CR>
+
 " Prettier setup
-" command! -nargs=0 Prettier :CocCommand prettier.formatFile
-" nnoremap <Leader>p :Prettier<CR>
-" vnoremap <Leader>p :Prettier<CR>
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+nnoremap <Leader>i :Prettier<CR>
+vnoremap <Leader>i :Prettier<CR>
 
 " Use theme
 if (has("termguicolors"))
   set termguicolors
 endif
 syntax enable
-colorscheme gruvbox
+set background=dark
+let g:gruvbox_material_background = 'hard'
+colorscheme gruvbox-material
+" colorscheme gruvbox
+" colorscheme iceberg
+" colorscheme codedark
 
 " Use Space + / to comment out code
 nnoremap <Leader>/ :Commentary<CR>

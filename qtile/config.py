@@ -131,6 +131,7 @@ screens = [
                 widget.GroupBox(
                     visible_groups=[i for i in "12345"],
                 ),
+                widget.Sep(),
                 widget.Prompt(),
                 widget.WindowName(),
                 widget.Chord(
@@ -139,9 +140,13 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                 ),
+                widget.Sep(),
                 widget.Systray(),
+                widget.Sep(),
                 widget.Memory(),
+                widget.Sep(),
                 widget.CPU(),
+                widget.Sep(),
                 widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
             ],
             28,

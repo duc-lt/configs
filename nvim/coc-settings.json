@@ -2,5 +2,7 @@
   "suggest.enablePreselect": true,
   "suggest.enablePreview": true,
   "coc.preferences.formatOnSaveFiletypes": ["typescript", "typescriptreact", "javascript", "javascriptreact", "html", "css", "python"],
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "prettier.bracketSpacing": true,
+  "prettier.semi": true
 }
