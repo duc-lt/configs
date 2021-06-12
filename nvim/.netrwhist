@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/ltd/configs/nvim'
+let g:netrw_dirhist_8='/home/ltd/configs/nvim/coc-configs'
+let g:netrw_dirhist_7='/home/ltd/configs/nvim'
+let g:netrw_dirhist_6='/home/ltd/python_files'
+let g:netrw_dirhist_5='/home/ltd/.config/nvim/coc-configs'
+let g:netrw_dirhist_4='/home/ltd/.config/nvim'
+let g:netrw_dirhist_3='/home/ltd/.config/nvim/configs'
+let g:netrw_dirhist_2='/home/ltd/.config/nvim'
+let g:netrw_dirhist_1='/home/retina/Desktop/NodeJS/express-generator/routes'
+let g:netrw_dirhist_0='/home/retina/Desktop/NodeJS/express-generator'

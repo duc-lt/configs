@@ -1,0 +1,9 @@
+{
+  "suggest.enablePreselect": true,
+  "suggest.enablePreview": true,
+  "coc.preferences.formatOnSaveFiletypes": ["typescript", "typescriptreact", "javascript", "javascriptreact", "html", "css", "python"],
+  "prettier.singleQuote": true,
+  "prettier.bracketSpacing": true,
+  "prettier.semi": true,
+  "clangd.path": "/home/ltd/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd"
+}
